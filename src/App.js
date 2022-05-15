@@ -14,14 +14,14 @@ function App() {
     { name: "Resume", description: "resume of Asha Dorsey" },
   ]);
 
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  const [currentProject, setCurrentProject] = useState(categories[0]);
 
   return (
     <div>
       <Nav
         categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
+        setCurrentProject={setCurrentProject}
+        currentProject={currentProject}
       ></Nav>
       <main>
         <div>

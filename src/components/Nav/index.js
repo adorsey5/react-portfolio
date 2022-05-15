@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav(props) {
-  const { categories = [], setCurrentCategory, currentCategory } = props;
+  const { categories = [], setCurrentProject, currentProject } = props;
 
   useEffect(() => {
-    document.title = capitalizeFirstLetter(currentCategory.name);
-  }, [currentCategory]);
+    document.title = capitalizeFirstLetter(currentProject.name);
+  }, [currentProject]);
 
   return (
     <header className="flex-row px-1">
@@ -29,19 +29,19 @@ function Nav(props) {
           <li className="mx-2">
             <span>Contact</span>
           </li>
-          {categories.map((category) => (
+          {categories.map((Project) => (
             <li
               className={`mx-1 ${
-                currentCategory.name === category.name && "navActive" //currentCategory.name === category.name will get evaluated, navActive, will be returned
+                currentProject.name === Project.name && "navActive" //currentProject.name === Project.name will get evaluated, navActive, will be returned
               }`}
-              key={category.name}
+              key={Project.name}
             >
               <span
                 onClick={() => {
-                  setCurrentCategory(category);
+                  setCurrentProject(Project);
                 }}
               >
-                {capitalizeFirstLetter(category.name)}
+                {capitalizeFirstLetter(Project.name)}
               </span>
             </li>
           ))}
