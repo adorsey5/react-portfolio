@@ -13,16 +13,15 @@ function Contact() {
   function handleChange(e) {
     if (e.target.name === "email") {
       const isValid = validateEmail(e.target.value);
-      //   console.log(isValid);
-      // isValid conditional statement
+
       if (!isValid) {
-        setErrorMessage("Your email is invalid.");
+        setErrorMessage("Invalid email.");
       } else {
         setErrorMessage("");
       }
     } else {
       if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
+        setErrorMessage(`Error! ${e.target.name} is required.`);
       } else {
         setErrorMessage("");
       }
@@ -38,10 +37,10 @@ function Contact() {
   }
 
   return (
-    <section>
-      <h1>Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
+    <section className="container-md">
+      <h2 className="text-center m-3 fw-bold">Contact me</h2>
+      <form className="justify-content-center" id="contact-form">
+        <div className="mt-4">
           <label htmlFor="name">Name:</label>
           <input
             type="text"
@@ -50,7 +49,7 @@ function Contact() {
             name="name"
           />
         </div>
-        <div>
+        <div className="mt-4">
           <label htmlFor="email">Email address:</label>
           <input
             type="email"
@@ -59,7 +58,7 @@ function Contact() {
             onChange={handleChange}
           />
         </div>
-        <div>
+        <div className="mt-4">
           <label htmlFor="message">Message:</label>
           <textarea
             name="message"
@@ -69,11 +68,15 @@ function Contact() {
           />
           {errorMessage && (
             <div>
-              <p className="error-text">{errorMessage}</p>
+              <p className="Error!">{errorMessage}</p>
             </div>
           )}
         </div>
-        <button type="submit">Submit</button>
+        <div className="mt-3 mb-3">
+          <button type="submit" onSubmit={handleSubmit}>
+            Submit
+          </button>
+        </div>
       </form>
     </section>
   );

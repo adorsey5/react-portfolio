@@ -1,30 +1,28 @@
 import React from "react";
 import Projects from "../Projects";
-// import { capitalizeFirstLetter } from "../../utils/helpers";
-// import photo from "../../assets/images/run buddy-screen shot.png";
 
 const projects = [
   {
     id: "run-buddy",
     title: "Run Buddy",
-    languages: "html, css",
+    languages: "HTML, CSS",
     description: "A static site which is landing page for a running company ",
     gitHub: "https://github.com/adorsey5/run-buddy",
     liveSite: "https://adorsey5.github.io/run-buddy/",
   },
   {
-    id: "horiseon",
-    title: "Horiseon",
-    languages: "html, css",
+    id: "the-spot",
+    title: "The Spot",
+    languages: "HTML, CSS, Javascript, MERN, GraphQL",
     description:
-      "A refactored webpage in order to build on accessibility and search engine optimization (SEO) by structuring HTML semantic elements and consolidating CSS selectors.",
-    gitHub: "https://github.com/adorsey5/revise-the-sunrise",
-    liveSite: "https://adorsey5.github.io/revise-the-sunrise/",
+      "An interactive MERN SPA project that serves as a social networking app for music professionals",
+    gitHub: "https://github.com/adorsey5/the-spot",
+    liveSite: "https://the-spot-group.herokuapp.com/",
   },
   {
     id: "love-match-calculator",
     title: "Love Match Calculator",
-    languages: "html, css, javascript",
+    languages: "HTML, CSS, Javascript, APIs",
     description:
       "A parody site in which the user can see if they are a match with their significant other",
     gitHub: "https://github.com/adorsey5/love-match-calculator",
@@ -33,7 +31,7 @@ const projects = [
   {
     id: "ouiii",
     title: "OUiii",
-    languages: "html, css, javascript, handlebars",
+    languages: "HTML, CSS, Javascript, MVC",
     description:
       "A social media application that allows a user to search for parties in their area as well as create parties which they can host",
     gitHub: "https://github.com/adorsey5/OUiii-1",
@@ -42,7 +40,7 @@ const projects = [
   {
     id: "readme",
     title: "README Generator",
-    languages: "html, css, nodejs",
+    languages: "HTML, CSS, Nodejs",
     description:
       "a command-line application that dynamically generates a professional README",
     gitHub: "https://github.com/adorsey5/README-generator",
@@ -52,7 +50,7 @@ const projects = [
   {
     id: "weather-dashboard",
     title: "Weather Dashboard",
-    languages: "html, css, javascript",
+    languages: "HTML, CSS, Javascript",
     description:
       "Use of a 5-day weather API to retrieve weather data for cities",
     gitHub: "https://github.com/adorsey5/weather-dashboard",
@@ -63,7 +61,7 @@ const projects = [
 function Portfolio() {
   return (
     <div>
-      <p className="text-center fw-bold my-3">Full Stack Projects</p>
+      <h2 className="my-3 text-center fw-bold">Full Stack Projects</h2>
       <hr />
 
       <Projects projects={projects} />
@@ -72,20 +70,3 @@ function Portfolio() {
 }
 
 export default Portfolio;
-
-// function Portfolio(props) {
-//   const currentCategory = {
-//     name: "Portfolio",
-//     description: "portfolio of full stack developer projects",
-//   };
-//   return (
-//     <section>
-//       <h1>{capitalizeFirstLetter(currentCategory.name)}</h1>
-//       <p>{currentCategory.name}</p>
-//       <div className="flex-row">
-//         <img src={photo} alt="Project Example" className="img-thumbnail mx-1" />
-//       </div>
-//     </section>
-//   );
-// }
-// export default Portfolio;

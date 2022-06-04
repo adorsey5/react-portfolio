@@ -9,7 +9,7 @@ function Resume() {
         <div className="text-center">
           <a href={resume} download>
             <img
-              id="resumeImg"
+              id="resumeIcon"
               src={require("../../assets/images/resume.jpg")}
               className="border-bottom border-dark border-3"
               alt="resume icon"
@@ -25,7 +25,7 @@ function Resume() {
           <li>HTML, CSS, Javascript</li>
           <li>APIs, Node.js, OOP</li>
           <li>Express.js, SQL/No SQL, ORM</li>
-          <li>MVC, PWA,React, MERN</li>
+          <li>MVC, PWA, React, MERN, GraphQL</li>
           <li>Git</li>
         </ul>
       </div>
