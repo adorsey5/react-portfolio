@@ -42,6 +42,8 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/plugin-syntax-class-properties": "^7.12.13",
     "gh-pages": "^4.0.0"
   }
 }
