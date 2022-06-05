@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.ff392d77.css",
+    "main.js": "/react-portfolio/static/js/main.36431a8e.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/run-buddy.png": "/react-portfolio/static/media/run-buddy.1dd924313ba714f8fc15.png",
+    "static/media/ouiii.png": "/react-portfolio/static/media/ouiii.a7f9a5366d28fba4be59.png",
+    "static/media/horiseon.png": "/react-portfolio/static/media/horiseon.b9a78a89eadc0a22711f.png",
+    "static/media/the-spot.png": "/react-portfolio/static/media/the-spot.49198c2914a5ac2d53cc.png",
+    "static/media/resume.pdf": "/react-portfolio/static/media/resume.e2910e2fd978a3957a40.pdf",
+    "static/media/weather-dashboard.png": "/react-portfolio/static/media/weather-dashboard.477b0b8155925b43795d.png",
+    "static/media/resume.jpg": "/react-portfolio/static/media/resume.01bc09694da054cb61b6.jpg",
+    "static/media/love-match-calculator.png": "/react-portfolio/static/media/love-match-calculator.eb28076c2ee3bcdffcdc.png",
+    "static/media/headshot.jpg": "/react-portfolio/static/media/headshot.f2de7125ad31907d5c61.jpg",
+    "static/media/readme.png": "/react-portfolio/static/media/readme.01a69e278ebc9d61e40a.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.ff392d77.css.map": "/react-portfolio/static/css/main.ff392d77.css.map",
+    "main.36431a8e.js.map": "/react-portfolio/static/js/main.36431a8e.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff392d77.css",
+    "static/js/main.36431a8e.js"
+  ]
+}
